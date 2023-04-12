@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,6 +6,7 @@ namespace Game.Reader.Games
     [RequireComponent(typeof(Rigidbody2D))]
     public class VedmaMovement : MonoBehaviour
     {
+        [Header("References:")]
         [SerializeField] private float speed;
 
         private Rigidbody2D _rigidbody;
@@ -21,9 +21,12 @@ namespace Game.Reader.Games
             Move();
         }
 
-        private void OnCollisionEnter2D(Collision2D col)
+        private void OnCollisionStay2D(Collision2D col)
         {
-            col
+            if (col.collider.CompareTag("Wall"))
+            {
+                Move();
+            }
         }
 
         private void Move()
@@ -33,7 +36,7 @@ namespace Game.Reader.Games
 
         private Vector2 GetRandomDirection()
         {
-            Vector2 startDirection = new(Random.Range(-1, 1), Random.Range(-1, 1));
+            Vector2 startDirection = new(Random.Range(-0.95f, 0.95f), Random.Range(-0.95f, 0.95f));
             startDirection.Normalize();
             startDirection *= speed;
 

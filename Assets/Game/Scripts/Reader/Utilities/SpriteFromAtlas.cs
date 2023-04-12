@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -7,6 +6,7 @@ namespace Game.Reader.Utilities
     [RequireComponent(typeof(SpriteRenderer))]
     public class SpriteFromAtlas : MonoBehaviour
     {
+        [Header("References:")]
         [SerializeField] private SpriteAtlas spriteAtlas;
         [SerializeField] private Sprite sprite;
 
