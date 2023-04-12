@@ -11,16 +11,7 @@
                     "id": "3112e01a-b02e-45d5-9e78-8cf492fdb2c1",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "TouchPress",
-                    "type": "Value",
-                    "id": "8c113837-a952-4142-a806-401f6ed9c081",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
+                    "interactions": "Tap(duration=0.5,pressPoint=0.5)",
                     "initialStateCheck": true
                 }
             ],
@@ -33,17 +24,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "TouchPosition",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "de1741e2-6ddf-4322-9f6b-beb790573671",
-                    "path": "<Touchscreen>/Press",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TouchPress",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

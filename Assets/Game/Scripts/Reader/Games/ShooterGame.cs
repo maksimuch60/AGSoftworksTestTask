@@ -24,12 +24,12 @@ namespace Game.Reader.Games
 
         private void OnEnable()
         {
-            _touch.started += IsTouchPressed;
+            _touch.performed += IsTouchPressed;
         }
         
         private void OnDisable()
         {
-            _touch.started -= IsTouchPressed;
+            _touch.performed -= IsTouchPressed;
         }
 
         private void Start()
@@ -39,8 +39,10 @@ namespace Game.Reader.Games
 
         private void IsTouchPressed(InputAction.CallbackContext context)
         {
+            Debug.Log("Touch");
             Vector2 touchPosition = context.ReadValue<Vector2>();
-            OnTouchPressed?.Invoke(touchPosition);
+            Vector2 worldPosition = Camera.main.ScreenToWorldPoint(touchPosition);
+            OnTouchPressed?.Invoke(worldPosition);
         }
     }
 }

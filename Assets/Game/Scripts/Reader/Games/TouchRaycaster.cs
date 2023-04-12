@@ -25,10 +25,14 @@ namespace Game.Reader.Games
 
         private void PerformRaycast(Vector2 touchPosition)
         {
-            int collisions = Physics2D.OverlapCircleNonAlloc(touchPosition, 1, null, _layerMask);
-            if (collisions > 0)
+            Collider2D[] collider2Ds = Physics2D.OverlapCircleAll(touchPosition, 1, _layerMask);
+            Debug.Log(collider2Ds.Length);
+            for (int i = 0; i < collider2Ds.Length; i++)
             {
-                OnTouched?.Invoke();
+                if (collider2Ds[i].gameObject.CompareTag("Vedma"))
+                {
+                    OnTouched?.Invoke();
+                }
             }
         }
     }

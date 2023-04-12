@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.U2D;
 
 namespace Game.Reader.Games
@@ -14,6 +15,8 @@ namespace Game.Reader.Games
         [Header("Settings:")]
         [SerializeField] private int lives;
 
+        public event Action OnDead; 
+
         private void OnEnable()
         {
             touchRaycaster.OnTouched += ApplyDamage;
@@ -24,10 +27,16 @@ namespace Game.Reader.Games
             touchRaycaster.OnTouched -= ApplyDamage;
         }
 
-        private void ApplyDamage()
+        public void ApplyDamage()
         {
             lives--;
             spriteRenderer.sprite = spriteAtlas.GetSprite(sprites[^lives].name);
+            
+            if (lives < 1)
+            {
+                OnDead?.Invoke();
+                touchRaycaster.OnTouched -= ApplyDamage;
+            }
         }
     }
 }

@@ -99,68 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteAtlas: {fileID: 4343727234628468602, guid: cc7274ff5a2d3354889741dce12b21c2, type: 2}
   sprite: {fileID: 5686712585504823368, guid: ee5bdce08dcf183498056e6315285281, type: 3}
---- !u!1 &377010267054014281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8177676643456768534}
-  - component: {fileID: 2566058614670249019}
-  m_Layer: 0
-  m_Name: TouchComponent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8177676643456768534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377010267054014281}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4210258388847236655}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2566058614670249019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377010267054014281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 65e468f9866008740b2543fab42bad69, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Touch
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1 &491050842471441522
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +426,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4210258388847236655}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1196567665647891119
 MonoBehaviour:
@@ -502,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 719c289ccea64fcab8b08dca50fee768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shooterGame: {fileID: 2229349818575502531}
+  shooterGame: {fileID: 4846856685693335546}
   _layerMask:
     serializedVersion: 2
     m_Bits: 64
@@ -610,7 +548,6 @@ Transform:
   - {fileID: 8044560719989157073}
   - {fileID: 5202541855344022207}
   - {fileID: 6690095383023474912}
-  - {fileID: 8177676643456768534}
   - {fileID: 4455173397975418508}
   - {fileID: 1741646549337380269}
   m_Father: {fileID: 0}
@@ -628,8 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ae4e290cebd734aa309b668f27f8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCamera: {fileID: 437528614005043797}
-  playerInput: {fileID: 0}
+  playerInput: {fileID: 294500251866810057}
 --- !u!1 &2927302761896597994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,7 +1517,7 @@ GameObject:
   - component: {fileID: 8821799255519517449}
   m_Layer: 6
   m_Name: Vedma
-  m_TagString: Untagged
+  m_TagString: Vedma
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1737,7 +1673,7 @@ MonoBehaviour:
   - {fileID: 2861881307111413404, guid: ee5bdce08dcf183498056e6315285281, type: 3}
   - {fileID: -7709039105213989123, guid: ee5bdce08dcf183498056e6315285281, type: 3}
   - {fileID: -2055947527683239878, guid: ee5bdce08dcf183498056e6315285281, type: 3}
-  lives: 0
+  lives: 3
 --- !u!1 &8652684058339551483
 GameObject:
   m_ObjectHideFlags: 0
@@ -1840,9 +1776,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4455173397975418508}
-  - component: {fileID: 2229349818575502531}
+  - component: {fileID: 294500251866810057}
   m_Layer: 0
-  m_Name: ShooterGame
+  m_Name: PlayerInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1861,9 +1797,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4210258388847236655}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2229349818575502531
+--- !u!114 &294500251866810057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1872,8 +1808,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 9126246636375927390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7ae4e290cebd734aa309b668f27f8bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameCamera: {fileID: 437528614005043797}
-  playerInput: {fileID: 2566058614670249019}
+  m_Actions: {fileID: -944628639613478452, guid: 65e468f9866008740b2543fab42bad69, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8821799255519517449}
+        m_TargetAssemblyTypeName: Game.Reader.Games.Vedma, Game
+        m_MethodName: ApplyDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3112e01a-b02e-45d5-9e78-8cf492fdb2c1
+    m_ActionName: Touch/TouchPosition[/Simulated Touchscreen/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8c113837-a952-4142-a806-401f6ed9c081
+    m_ActionName: Touch/TouchPress[/Simulated Touchscreen/press]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Touch
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -7,6 +8,9 @@ namespace Game.Reader.Games
     public class VedmaMovement : MonoBehaviour
     {
         [Header("References:")]
+        [SerializeField] private Vedma vedma;
+        
+        [Header("Values:")]
         [SerializeField] private float speed;
 
         private Rigidbody2D _rigidbody;
@@ -14,6 +18,16 @@ namespace Game.Reader.Games
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+        }
+
+        private void OnEnable()
+        {
+            vedma.OnDead += SetActive;
+        }
+
+        private void OnDisable()
+        {
+            vedma.OnDead -= SetActive;
         }
 
         private void Start()
@@ -27,6 +41,11 @@ namespace Game.Reader.Games
             {
                 Move();
             }
+        }
+
+        private void SetActive()
+        {
+            enabled = false;
         }
 
         private void Move()
