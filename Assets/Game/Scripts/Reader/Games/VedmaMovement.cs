@@ -45,6 +45,7 @@ namespace Game.Reader.Games
 
         private void SetActive()
         {
+            _rigidbody.velocity = Vector2.zero;
             enabled = false;
         }
 
