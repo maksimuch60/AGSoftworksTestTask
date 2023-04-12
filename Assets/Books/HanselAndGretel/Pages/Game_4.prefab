@@ -1615,6 +1615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1eb167b37486f49ae4b5ef7432ac48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vedma: {fileID: 8821799255519517449}
   speed: 5
 --- !u!50 &2522057195453847700
 Rigidbody2D:
@@ -1673,7 +1674,7 @@ MonoBehaviour:
   - {fileID: 2861881307111413404, guid: ee5bdce08dcf183498056e6315285281, type: 3}
   - {fileID: -7709039105213989123, guid: ee5bdce08dcf183498056e6315285281, type: 3}
   - {fileID: -2055947527683239878, guid: ee5bdce08dcf183498056e6315285281, type: 3}
-  lives: 3
+  lives: 4
 --- !u!1 &8652684058339551483
 GameObject:
   m_ObjectHideFlags: 0

@@ -30,8 +30,11 @@ namespace Game.Reader.Games
         public void ApplyDamage()
         {
             lives--;
-            spriteRenderer.sprite = spriteAtlas.GetSprite(sprites[^lives].name);
-            
+            if (lives > 0)
+            {
+                spriteRenderer.sprite = spriteAtlas.GetSprite(sprites[^lives].name);
+            }
+
             if (lives < 1)
             {
                 OnDead?.Invoke();

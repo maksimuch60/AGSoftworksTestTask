@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +14,7 @@ namespace Game.Reader.Games
         [SerializeField] private PlayerInput playerInput;
 
         private InputAction _touch = new();
+        WaitForSeconds _touchDelay = new WaitForSeconds(0.5f);
 
         public event Action<Vector2> OnTouchPressed; 
 
@@ -39,10 +41,18 @@ namespace Game.Reader.Games
 
         private void IsTouchPressed(InputAction.CallbackContext context)
         {
+            StartCoroutine(TouchDelay());
             Debug.Log("Touch");
             Vector2 touchPosition = context.ReadValue<Vector2>();
             Vector2 worldPosition = Camera.main.ScreenToWorldPoint(touchPosition);
             OnTouchPressed?.Invoke(worldPosition);
+        }
+
+        private IEnumerator TouchDelay()
+        {
+            _touch.performed -= IsTouchPressed;
+            yield return _touchDelay;
+            _touch.performed += IsTouchPressed;
         }
     }
 }
