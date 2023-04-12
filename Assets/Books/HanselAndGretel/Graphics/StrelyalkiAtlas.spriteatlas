@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: StrelyalkiAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 4701385650529196693, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -8472038879273701621, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 8787660877116741690, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 9183216775635087366, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -8145145641067997534, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -2110890163951732350, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -3456974320525196399, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 4485863227652474906, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -474650116164630791, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -412777692360177413, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -8852477509509247680, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 5686712585504823368, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 4919332389140052312, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 2861881307111413404, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -7709039105213989123, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: -2055947527683239878, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    - {fileID: 2443633568488016823, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 2443633568488016823, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -7709039105213989123, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -474650116164630791, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -2055947527683239878, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 2861881307111413404, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -8145145641067997534, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 5686712585504823368, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 9183216775635087366, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 8787660877116741690, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -8472038879273701621, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 4701385650529196693, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -412777692360177413, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -8852477509509247680, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -2110890163951732350, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: -3456974320525196399, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 4485863227652474906, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  - {fileID: 4919332389140052312, guid: ee5bdce08dcf183498056e6315285281, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - zatemnenie
+  - vedma2
+  - rezinka 1
+  - vedma3
+  - vedma1
+  - fon
+  - solnushko
+  - factura
+  - derev3
+  - derev2
+  - derev1
+  - rogatka
+  - rogatka 1
+  - kamen
+  - kusty1
+  - rezinka
+  - vedma
+  m_RenderDataMap: {}
+  m_Tag: StrelyalkiAtlas
+  m_IsVariant: 0

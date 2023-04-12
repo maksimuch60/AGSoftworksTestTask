@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fon
+    uniqueID: 2138232951
+    locked: 0
+  - name: Tree
+    uniqueID: 653677059
+    locked: 0
+  - name: Vedma
+    uniqueID: 2593138733
     locked: 0
